@@ -18,7 +18,7 @@
 
         <link rel="pingback" href="<?php bloginfo('pingback_url'); ?>">
 
-        <link rel="stylesheet" href="https://use.typekit.net/vhu1xgf.css">
+        <link href="https://fonts.googleapis.com/css?family=Oswald:400,700" rel="stylesheet">
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
 
         <?php // wordpress head functions ?>
