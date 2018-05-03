@@ -1,0 +1,77 @@
+/* Search Bar
+---------------------------------------------------------- */
+
+#true-search-bar {
+  background: #222;
+  padding: 0 2rem;
+  display: none;
+}
+#true-search-bar input {
+  background: transparent;
+  color: #fff;
+  display: block;
+  font-size: 32px;
+  font-weight: 300;
+  height: 84px;
+  line-height: 84px; 
+  margin-left: 0;
+  margin-right: auto;  
+  max-width: 1120px;
+  padding-left: 0;
+  width: 100%;
+  border: 0;
+  outline: none;
+}
+.search-text {
+  display: none;
+}
+#true-search-bar input[type="submit"],
+#searchform .assistive-text {
+  display: none;
+}
+
+#true-search-bar input::-webkit-input-placeholder {  
+  color: #aaa;
+  opacity: 1;
+}
+#true-search-bar input:-moz-placeholder { 
+  color: #aaa; 
+  opacity: 1; 
+}
+#true-search-bar input::-moz-placeholder {
+  color: #aaa;
+  opacity: 1;
+}
+#true-search-bar input:-ms-input-placeholder {  
+  color: #aaa; 
+  opacity: 1; 
+}
+
+
+.searchtop {
+  display: none;
+  font-size: 21px;
+  position: absolute;
+  right: 101px;
+  top: 27px;
+  z-index: 1000;
+}
+@media screen and (min-width: 370px) {
+  .searchtop {
+    display: inline-block;
+  }
+}
+
+.gray_button, .searchtop a, .searchtop a i {
+  cursor: pointer;
+}
+.searchtop a:focus, .searchtop a:hover, .searchtop a:active {
+  color: #b1b1b1;
+}
+
+.search-result {
+  margin-bottom: 2.0rem;
+  h2 {
+    font-weight: bold;
+  }
+}

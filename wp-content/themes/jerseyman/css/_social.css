@@ -1,0 +1,8 @@
+.social-menu {
+    display: flex;
+    align-items: center;
+
+    li {
+        margin-right: 2.0rem;
+    }
+}

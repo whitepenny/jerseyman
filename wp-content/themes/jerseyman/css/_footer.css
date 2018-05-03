@@ -1,0 +1,66 @@
+.footer__container {
+    background: #222;
+    padding: 40px 0;
+    font-size: 1.4rem;
+}
+
+.footer {
+    @mixin container;
+    color: #fff;
+}
+
+.footer-group {
+    display: flex;
+    justify-content: space-between;
+
+    h2 {
+        font-weight: bold;
+        text-transform: uppercase;
+        @mixin bravo;
+        color: #fff;
+    }
+}
+
+.footer-logo {
+    width: 180px;
+    margin-bottom: 3.0rem;
+}
+
+.footer-follow {
+    a {
+        color: $mainColor;
+
+        &:hover {
+            color: #fff;
+        }
+    }
+}
+
+.footer-nav {
+    a {
+        color: #aaa;
+        text-transform: uppercase;
+        font-weight: bold;
+        
+        
+    }
+}
+
+
+.footer-address {
+    font-size: 1.2rem;
+    margin: 0;
+
+    li {
+        line-height: 2.6rem;
+    }
+}
+
+.footer-copyright {
+    font-size: 1.2rem;
+    margin-top: 2.0rem;
+}
+
+.footer-network {
+    flex: 0 0 20%;
+}

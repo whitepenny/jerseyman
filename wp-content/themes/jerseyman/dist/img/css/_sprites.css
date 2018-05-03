@@ -1,0 +1,65 @@
+.icon {
+    font-size: 10px;
+}
+
+.icon:before {
+    content:' ';
+    vertical-align:middle;
+    display: inline-block;
+    background-image: url("../svg/sprite.svg");
+    background-repeat: no-repeat;
+    background-size: 5.8em 19.1em;
+}
+
+.no-svg .icon:before {
+    background-image: url("../svg/sprite.png");
+}
+
+
+
+  .icon.camera:before {
+      background-position: -0.5em -0.5em;
+      width: 2.1em;
+      height: 1.8em;
+  }
+
+
+
+
+  .icon.card:before {
+      background-position: -0.5em -3.3em;
+      width: 4.8em;
+      height: 3.1em;
+  }
+
+
+
+
+  .icon.para-icon:before {
+      background-position: -0.5em -7.4em;
+      width: 2.5em;
+      height: 2.6em;
+  }
+
+
+
+
+  .icon.star:before {
+      background-position: -0.5em -11em;
+      width: 3.4em;
+      height: 3.3em;
+  }
+
+
+
+
+  .icon.starburst:before {
+      background-position: -0.5em -15.3em;
+      width: 3.4em;
+      height: 3.3em;
+  }
+
+
+
+
+
