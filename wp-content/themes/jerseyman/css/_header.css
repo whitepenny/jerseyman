@@ -108,6 +108,10 @@
 
         .fa-lg {
             font-size: 1.1em;
+        }
+
+        a:hover {
+            color: $mainColor;
         }    
     }
     
@@ -205,22 +209,3 @@
     cursor: pointer;
 }
 
-.searchbar {
-    background: $mainColor;
-    width: 100%;
-    @mixin animation;
-    height: 30px;
-    margin-top: -30px;
-
-
-    &.fs-swap-active {
-        margin-top: 0;
-    
-    }
-
-    .search-container {
-        max-width: 1400px;
-        margin: 0 auto;
-        padding: 0 2.0rem;
-    }
-}

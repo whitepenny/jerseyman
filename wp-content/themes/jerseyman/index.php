@@ -5,6 +5,7 @@
 
   <?php $args = array(
             'post_type' => 'post',
+            'posts_per_page' => 1,
             'tax_query' => array(
                     array(
                         'taxonomy' => 'category',

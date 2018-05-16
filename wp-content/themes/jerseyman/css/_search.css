@@ -1,19 +1,35 @@
 /* Search Bar
 ---------------------------------------------------------- */
 
-#true-search-bar {
-  background: #222;
-  padding: 0 2rem;
-  display: none;
+.searchbar {
+    background: $mainColor;
+    width: 100%;
+    @mixin animation;
+    height: 60px;
+    margin-top: -60px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+
+
+    &.fs-swap-active {
+        margin-top: 0;
+    
+    }
+
+    .search-container {
+        max-width: 1400px;
+        padding: 0 2.0rem;
+    }
 }
-#true-search-bar input {
+
+.searchbar input {
   background: transparent;
   color: #fff;
   display: block;
   font-size: 32px;
   font-weight: 300;
-  height: 84px;
-  line-height: 84px; 
+  color: #fff;
   margin-left: 0;
   margin-right: auto;  
   max-width: 1120px;
@@ -21,17 +37,18 @@
   width: 100%;
   border: 0;
   outline: none;
+  text-align: left;
 }
 .search-text {
   display: none;
 }
-#true-search-bar input[type="submit"],
+.searchbar input[type="submit"],
 #searchform .assistive-text {
   display: none;
 }
 
-#true-search-bar input::-webkit-input-placeholder {  
-  color: #aaa;
+.searchbar input::-webkit-input-placeholder {  
+  color: #fff;
   opacity: 1;
 }
 #true-search-bar input:-moz-placeholder { 
@@ -47,31 +64,3 @@
   opacity: 1; 
 }
 
-
-.searchtop {
-  display: none;
-  font-size: 21px;
-  position: absolute;
-  right: 101px;
-  top: 27px;
-  z-index: 1000;
-}
-@media screen and (min-width: 370px) {
-  .searchtop {
-    display: inline-block;
-  }
-}
-
-.gray_button, .searchtop a, .searchtop a i {
-  cursor: pointer;
-}
-.searchtop a:focus, .searchtop a:hover, .searchtop a:active {
-  color: #b1b1b1;
-}
-
-.search-result {
-  margin-bottom: 2.0rem;
-  h2 {
-    font-weight: bold;
-  }
-}

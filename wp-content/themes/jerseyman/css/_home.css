@@ -39,20 +39,38 @@
     }
 }
 
-.home-featured-bucket {
-    border-left: 1px solid $backgroundColor;
+.standard-bucket__content {
+    padding: 3.0rem;
 }
 
 
 .standard-bucket {
+    
     h2 {
         font-weight: bold;
         margin-bottom: 2.0rem;
     }
 }
 
-.standard-bucket__content {
-    padding: 3.0rem;
+.home-featured-bucket .standard-bucket {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+
+    a {
+        display: block;
+    }
+}
+
+.home-featured-bucket .standard-bucket__content {
+    
+    flex: 2;
+    border-left: 1px solid $borderColor;
+    border-right: 1px solid $borderColor;
+}
+
+.home-featured-bucket:last-of-type .standard-bucket__content {
+    border: 0;
 }
 
 
