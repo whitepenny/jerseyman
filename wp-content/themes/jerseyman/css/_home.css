@@ -103,15 +103,24 @@
 .home-section-header {
     background: $backgroundColor;
     padding: 3.0rem;
-    display: flex;
+    
     align-items: center;
+
+    @media (min-width: $phoneSize) {
+        display: flex;
+    }
 
     strong {
         display: inline-block;
         @mixin bravo;
         font-weight: bold;
         text-transform: uppercase;
-        margin-right: 4.0rem;
+        margin-bottom: 1.0rem;
+
+        @media (min-width: $phoneSize) {
+            margin-right: 4.0rem;
+            margin-bottom: 0;
+        }
     }
 }
 

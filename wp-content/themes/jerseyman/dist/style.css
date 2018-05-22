@@ -733,14 +733,18 @@ body .gform_wrapper .validation_message {color: #C53935;}
 .home-section-header {
     background: #F7F6F6;
     padding: 3.0rem;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
+    
     -webkit-box-align: center;
+    
         -ms-flex-align: center;
+    
             align-items: center;
 }
-.home-section-header strong {display: inline-block;font-size: 3.0rem;line-height: 4.4rem;font-weight: bold;text-transform: uppercase;margin-right: 4.0rem;}
+@media (min-width: 768px) {
+.home-section-header {display:-webkit-box;display:-ms-flexbox;display:flex}}
+.home-section-header strong {display: inline-block;font-size: 3.0rem;line-height: 4.4rem;font-weight: bold;text-transform: uppercase;margin-bottom: 1.0rem;}
+@media (min-width: 768px) {
+.home-section-header strong {margin-right:4.0rem;margin-bottom:0}}
 .home-section-link {
     display: -webkit-box;
     display: -ms-flexbox;
