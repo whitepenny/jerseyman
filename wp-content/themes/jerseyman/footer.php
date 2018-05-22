@@ -13,11 +13,11 @@
             <div class="footer-info">
                 <div class="footer-logo">
                     <?php 
-                               $custom_logo_id = get_theme_mod( 'custom_logo' );
-                               $logo = wp_get_attachment_image_src( $custom_logo_id , 'full' ); ?>
+                               $footer_logo = get_field('footer_logo', 'options')
+                                ?>
                                
                                <a href="/">
-                               <img src="<?php echo $logo['0']; ?>" alt="">
+                               <img src="<?php echo $footer_logo['url']; ?>" alt="">
                                </a>
                 </div>
                 <ul class="footer-address">
