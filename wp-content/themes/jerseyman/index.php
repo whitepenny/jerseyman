@@ -88,11 +88,26 @@
                         </div>
 
                         <div class="post-preview__content">
-                        <?php $cats = get_the_category_list( ', ', $post->ID ); ?>
+                        <?php $cats = get_the_category(); ?>
+
                         
                         <?php if($cats): ?>
                             <div class="category-list">
-                            <?php echo $cats; ?>
+                            <?php
+                            
+                            $separator = ', ';
+                            $output = '';
+                            if($cats){
+                                foreach($cats as $category) {
+                            if($category->name !== 'Home Featured') 
+                            if($category->name !== 'Uncategorized')
+                            if($category->name !== 'Featured')
+                            {
+                                    $output .= '<a href="'.get_category_link( $category->term_id ).'" title="' . esc_attr( sprintf( __( "View all posts in %s" ), $category->name ) ) . '">'.$category->cat_name.'</a>'.$separator; }
+                                }
+                            echo trim($output, $separator);
+                            }
+                            ?>
                             </div>
                         <?php endif; ?>
                         <a href="<?php the_permalink(); ?>">
