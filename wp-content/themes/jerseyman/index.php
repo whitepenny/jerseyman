@@ -36,7 +36,12 @@
                     
                     <a href="<?php the_permalink(); ?>"><h2><?php the_title(); ?></h2></a>
 
-                    <?php the_excerpt(); ?>
+                    <?php if(get_field('post_preview')): ?>
+
+                       <?php the_field('post_preview'); ?>
+                    <?php else: ?>
+                           <?php the_excerpt(); ?>
+                    <?php endif; ?>
 
                     <div class="single-post__meta">
                         <i class="icon para-icon"></i>
@@ -93,7 +98,12 @@
                         <a href="<?php the_permalink(); ?>">
                         <h2><?php the_title(); ?></h2>
                         </a>
-                        <?php the_excerpt(); ?>
+                        <?php if(get_field('post_preview')): ?>
+
+                           <?php the_field('post_preview'); ?>
+                        <?php else: ?>
+                               <?php the_excerpt(); ?>
+                        <?php endif; ?>
 
                         <div class="single-post__meta">
                             <i class="icon para-icon"></i>
