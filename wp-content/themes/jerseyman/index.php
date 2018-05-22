@@ -28,12 +28,13 @@
             <?php while($featured_query->have_posts()) : $featured_query->the_post() ?>
 
                 <?php $thumb = wp_get_attachment_image_src( get_post_thumbnail_id($post->ID), 'sr-hero' );?>
-
+                <a href="<?php the_permalink(); ?>">
                 <img src="<?php echo $thumb['0']; ?>" alt="">
+                </a>
                 
                 <div class="featured-banner__content featured-banner__post">
                     
-                    <h2><?php the_title(); ?></h2>
+                    <a href="<?php the_permalink(); ?>"><h2><?php the_title(); ?></h2></a>
 
                     <?php the_excerpt(); ?>
 
@@ -76,7 +77,9 @@
                         
                         
                         <div class="post-preview__image">
+                            <a href="<?php the_permalink(); ?>">
                             <img src="<?php echo $thumb['0']; ?>" alt="">
+                        </a>
                         </div>
 
                         <div class="post-preview__content">
@@ -87,7 +90,9 @@
                             <?php echo $cats; ?>
                             </div>
                         <?php endif; ?>
+                        <a href="<?php the_permalink(); ?>">
                         <h2><?php the_title(); ?></h2>
+                        </a>
                         <?php the_excerpt(); ?>
 
                         <div class="single-post__meta">

@@ -273,8 +273,8 @@ Template Name: Home
                 </p>
 
                 <div class="button-group">
-                    <a href="#" class="btn btn-primary">See Past Events</a>
-                    <a href="#" class="btn btn-primary">Become a Member</a>
+                    <div><a href="#" class="btn btn-primary">See Past Events</a></div>
+                    <div><a href="#" class="btn btn-primary">Become a Member</a></div>
                 </div>
             
 

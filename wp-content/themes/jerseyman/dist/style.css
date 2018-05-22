@@ -129,7 +129,7 @@ ol {
     padding: 2.4rem 3.6rem;
     border: 0;
     font-size: 1.3rem;
-    line-height: 1.2rem;
+    line-height: 1.7rem;
     font-family: 'Open Sans', sans-serif;
     background: #6DDA2A;
     color: #fff;
@@ -146,7 +146,7 @@ ol {
     padding: 2.4rem 3.6rem;
     border: 0;
     font-size: 1.3rem;
-    line-height: 1.2rem;
+    line-height: 1.7rem;
     font-family: 'Open Sans', sans-serif;
     border: 2px solid #C5000D;
     line-height: .8rem;
@@ -155,11 +155,20 @@ ol {
 }
 .btn-secondary:hover {background: #C5000D;color: #fff;}
 .button-group {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  
+  -webkit-box-pack: justify;
+  
+      -ms-flex-pack: justify;
+  
+          justify-content: space-between;
+  margin: 0 auto;
+  text-align: center;
 }
-.button-group .btn-primary {margin-right: 2.0rem;}
+@media (min-width: 768px) {
+.button-group {display:-webkit-box;display:-ms-flexbox;display:flex}}
+.button-group div {text-align: center;margin: 0 auto;margin-bottom: 2.0rem;}
+@media (min-width: 768px) {
+.button-group div {max-width:45%}}
 /*Headings*/
 /*Content*/
 a {
@@ -839,8 +848,9 @@ body .gform_wrapper .validation_message {color: #C53935;}
 @media (min-width: 900px) {
 .featured-banner__event {width:60%}}
 .featured-banner__event h2 {font-size: 4.6rem;line-height: 5.4rem;text-transform: uppercase;color: #fff;font-weight: bold;}
-.featured-banner__event .button-group {-ms-flex-pack: distribute;justify-content: space-around;margin: 0 auto;max-width: 75%;}
-.featured-banner__event .button-group .btn-primary:last-child {margin:;}
+.featured-banner__event .button-group {-ms-flex-pack: distribute;justify-content: space-around;margin: 0 auto;max-width: 75%;display: block;}
+@media (min-width: 768px) {
+.featured-banner__event .button-group {display:-webkit-box;display:-ms-flexbox;display:flex}}
 .photo-link {
     display: inline-block;
     color: #fff;

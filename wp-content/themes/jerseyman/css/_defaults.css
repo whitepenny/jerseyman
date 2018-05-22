@@ -186,7 +186,7 @@ ol {
     padding: 2.4rem 3.6rem;
     border: 0;
     font-size: 1.3rem;
-    line-height: 1.2rem;
+    line-height: 1.7rem;
     font-family: $bodyFont;
 }
 
@@ -219,10 +219,25 @@ ol {
 }
 
 .button-group {
-  display: flex;
+  
+  justify-content: space-between;
+  margin: 0 auto;
+  text-align: center;
+  
 
-  .btn-primary {
-    margin-right: 2.0rem;
+  @media (min-width: $phoneSize) {
+    display: flex;
+  }
+
+  div {
+    
+    text-align: center;
+    margin: 0 auto;
+    margin-bottom: 2.0rem;
+
+    @media (min-width: $phoneSize) {
+      max-width: 45%;
+    }
   }
 }
 
