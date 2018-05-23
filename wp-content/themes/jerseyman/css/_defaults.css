@@ -162,7 +162,7 @@ ol {
 
 
 @define-mixin container {
-  max-width: 120.0rem;
+  max-width: 140.0rem;
   margin: 0 auto;
   padding: 0 2.0rem;
 }
@@ -283,6 +283,10 @@ ol {
 a {
   color: #000;
   text-decoration: none;
+
+  &:hover {
+    color: $mainColor;
+  }
 
 }
 

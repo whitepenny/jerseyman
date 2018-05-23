@@ -42,7 +42,9 @@
         text-transform: uppercase;
         font-weight: bold;
         
-        
+        &:hover {
+            color: $mainColor;
+        }
     }
 }
 

@@ -24,8 +24,8 @@
     &:before, &:after {
         content: '';
         height: 1.0rem;
-        border-top: 1px solid $backgroundColor;
-        border-bottom: 1px solid $backgroundColor;
+        border-top: 1px solid $borderColor;
+        border-bottom: 1px solid $borderColor;
         display: inline-block;
         width: 100%;
 
@@ -61,6 +61,13 @@
     h2 {
         @mixin bravo;
         font-weight: bold;
+    }
+
+    a:hover {
+        h2 {
+            color: $mainColor;
+            @mixin animation;
+        }
     }
 
     .category-list {
