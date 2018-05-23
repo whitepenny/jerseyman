@@ -19,6 +19,9 @@
                     <i class="icon para-icon"></i>
                     <div class="single-post__author">By <?php the_author(); ?></div>
                     <div class="single-post__date"><?php echo get_the_date('F d, Y'); ?></div>
+                    <div class="share-buttons">
+                    <?php dynamic_sidebar( 'sidebar2' ); ?> 
+                    </div>
                 </div>
             </div>
         </div>

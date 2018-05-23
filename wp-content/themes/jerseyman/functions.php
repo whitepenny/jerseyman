@@ -117,6 +117,8 @@ function sr_register_sidebars() {
     'id' => 'sidebar2',
     'name' => __( 'Sidebar 2', 'sr' ),
     'description' => __( 'The second sidebar.', 'sr' ),
+    'before_widget' => '',
+    'after_widget' => '',
   ));
 }
 
