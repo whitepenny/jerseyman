@@ -200,7 +200,7 @@ ol {
     color: #000;
 
     &:hover {
-        background: color($mainColor saturation(110%));
+        background: #000;
         color: #fff;
     }
 }
