@@ -616,7 +616,7 @@ body .gform_wrapper .validation_message {color: #C53935;}
     background: #F7F6F6;
     padding: 3.0rem 0;
 }
-.single-post__header h1 {font-weight: bold;font-size: 4.6rem;line-height: 5.4rem;text-transform: uppercase;}
+.single-post__header h1 {font-weight: bold;font-size: 4.6rem;line-height: 5.4rem;margin-bottom: 2.0rem;}
 .sr-single-post {
     display: -webkit-box;
     display: -ms-flexbox;
