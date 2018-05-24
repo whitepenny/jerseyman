@@ -395,12 +395,12 @@ body .gform_wrapper .validation_message {color: #C53935;}
     -webkit-box-flex:2;
         -ms-flex:2;
             flex:2;
-    margin: 0;
+    margin: 0 2.0rem;
 }
 @media (min-width: 992px) {
 .main-navigation {display:block}}
 .main-navigation ul {display: -webkit-box;display: -ms-flexbox;display: flex;-webkit-box-align: center;-ms-flex-align: center;align-items: center;-webkit-box-pack: justify;-ms-flex-pack: justify;justify-content: space-between;}
-.main-navigation ul li {margin: 0 1.6rem;}
+.main-navigation ul li {margin: 0;}
 .main-navigation a:hover {color: #6DDA2A;}
 .main-navigation li.current-menu-item a, .main-navigation li.current-post-ancestor a {border-bottom: 1px solid #6DDA2A;}
 @media (min-width: 768px) {
