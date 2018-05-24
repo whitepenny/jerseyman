@@ -382,7 +382,7 @@ body .gform_wrapper .validation_message {color: #C53935;}
     font-weight: bold;
     line-height: 2.0rem;
 }
-@media (min-width: 992px) {
+@media (min-width: 1400px) {
 .header-cta {display:-webkit-box;display:-ms-flexbox;display:flex}}
 .header-cta i {margin-right: 1.0rem;}
 .header-cta span {display: block;font-weight: normal;text-transform: uppercase;text-transform: uppercase;font-size: 1.2rem;}
@@ -395,7 +395,7 @@ body .gform_wrapper .validation_message {color: #C53935;}
     -webkit-box-flex:2;
         -ms-flex:2;
             flex:2;
-    margin: 0 2.0rem;
+    margin: 0 4.0rem;
 }
 @media (min-width: 992px) {
 .main-navigation {display:block}}
