@@ -364,7 +364,7 @@ body .gform_wrapper .validation_message {color: #C53935;}
     margin-left: 2.0rem;
     border: 1px solid #F7F6F6;
 }
-@media (min-width: 768px) {
+@media (min-width: 992px) {
 .mobile-nav-trigger {display:none}}
 .mobile-nav-trigger.fs-navigation-handle.fs-navigation-enabled {
     border: 1px solid #F7F6F6;
@@ -395,9 +395,9 @@ body .gform_wrapper .validation_message {color: #C53935;}
     -webkit-box-flex:2;
         -ms-flex:2;
             flex:2;
-    margin: 0 4.0rem;
+    margin: 0;
 }
-@media (min-width: 768px) {
+@media (min-width: 992px) {
 .main-navigation {display:block}}
 .main-navigation ul {display: -webkit-box;display: -ms-flexbox;display: flex;-webkit-box-align: center;-ms-flex-align: center;align-items: center;-webkit-box-pack: justify;-ms-flex-pack: justify;justify-content: space-between;}
 .main-navigation ul li {margin: 0 1.6rem;}
