@@ -626,10 +626,10 @@ body .gform_wrapper .validation_message {color: #C53935;}
     padding: 0 10px;
 }
 #jp-relatedposts .jp-relatedposts-items-visual h4.jp-relatedposts-post-title {
-    margin: 2.0rem 0;
+    margin: 2.0rem 0 !important;
 }
 #jp-relatedposts .jp-relatedposts-items .jp-relatedposts-post .jp-relatedposts-post-title a {
-    font-weight: bold;
+    font-weight: bold !important;
 }
 .single-post__header {
     background: #F7F6F6;
