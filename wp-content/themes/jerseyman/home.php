@@ -190,7 +190,23 @@ Template Name: Home
             </div>
 
             <div class="subscribe-ad">
-                The Ad
+                <?php 
+                $ads = get_field('home_subscribe_ad', 'options'); // Get all the ads
+                $key = array_rand($ads, 1); // Get the key of the random ad
+                $ad = $ads[$key]; // Get the add array from the returned key
+                ?>
+
+                <?php 
+
+                    $link = $ad['link'];
+                    $image = $ad['image'];
+                ?>
+
+                <a href="<?php echo $link; ?>">
+                    <img src="<?php echo $image['url']; ?>" alt="">
+                </a>
+
+
             </div>
 
         </div>

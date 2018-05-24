@@ -37,6 +37,30 @@
 
     <div class="page-wrapper nav_content">
     
+    <div class="banner-ad">
+        <?php if(is_front_page()) {
+            $ads = get_field('home_top_ad', 'options'); // Get all the ads
+            $key = array_rand($ads, 1); // Get the key of the random ad
+            $ad = $ads[$key]; // Get the add array from the returned key
+        } else {
+            $ads = get_field('top_ad', 'options');
+            $ad = array_rand($ads, 1);
+            $ad = $ads[$key];
+        }  ?>
+        
+        <?php 
+
+            $link = $ad['link'];
+            $image = $ad['image'];
+        ?>
+
+        <a href="<?php echo $link; ?>">
+            <img src="<?php echo $image['url']; ?>" alt="">
+        </a>
+        
+        
+        
+    </div>
     <div class="header">
         
         <div class="header-logo">
