@@ -214,3 +214,10 @@
     padding: 0 10px;
 }
 
+#jp-relatedposts .jp-relatedposts-items-visual h4.jp-relatedposts-post-title {
+    margin: 2.0rem 0;
+}
+
+#jp-relatedposts .jp-relatedposts-items .jp-relatedposts-post .jp-relatedposts-post-title a {
+    font-weight: bold;
+}

@@ -625,6 +625,12 @@ body .gform_wrapper .validation_message {color: #C53935;}
 .share-buttons {
     padding: 0 10px;
 }
+#jp-relatedposts .jp-relatedposts-items-visual h4.jp-relatedposts-post-title {
+    margin: 2.0rem 0;
+}
+#jp-relatedposts .jp-relatedposts-items .jp-relatedposts-post .jp-relatedposts-post-title a {
+    font-weight: bold;
+}
 .single-post__header {
     background: #F7F6F6;
     padding: 3.0rem 0;
