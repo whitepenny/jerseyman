@@ -208,6 +208,11 @@
             @mixin alpha;
         }
     }
+
+    a:hover h2 {
+        color: $mainColor;
+        @mixin animation;
+    }
 }
 
 .share-buttons {

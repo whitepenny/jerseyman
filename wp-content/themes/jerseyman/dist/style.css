@@ -622,6 +622,7 @@ body .gform_wrapper .validation_message {color: #C53935;}
 .featured-banner__post h2 {color: #fff;font-size: 3.0rem;line-height: 4.4rem;font-weight: bold;padding-bottom: 2.0rem;border-bottom: 2px solid #6DDA2A;margin-bottom: 2.0rem;}
 @media (min-width: 1300px) {
 .featured-banner__post h2 {font-size:4.6rem;line-height:5.4rem}}
+.featured-banner__post a:hover h2 {color: #6DDA2A;-webkit-transition: all .5s ease !important;transition: all .5s ease !important;}
 .share-buttons {
     padding: 0 10px;
 }
