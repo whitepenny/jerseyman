@@ -71,31 +71,31 @@
             </div>
 
             <div class="single-post__sidebar">
-               
-                Sidebar
 
-               <!--  <?php $query_args = array(
-                    'post_type' => 'post',
-                    'posts_per_page' => 3,
-                );
-                $sidebar_query = new WP_Query( $query_args ); ?>
-                 
+                <div class="sidebar_ad">
+                    <?php
+                        $sidebar_ads = get_field('sidebar_ad', 'options'); // Get all the ads
 
-                <?php while($sidebar_query->have_posts()) : $sidebar_query->the_post();  ?>
-                    <?php $thumb = wp_get_attachment_image_src( get_post_thumbnail_id($post->ID), 'sr-overview' );?>            
-                    <div class="sidebar-post">
+                        if($sidebar_ads) {
+                            $sidebar_ad_key = array_rand($sidebar_ads, 1); // Get the key of the random ad
+                            $sidebar_ad = $sidebar_ads[$sidebar_ad_key]; // Get the add array from the returned key
+                        }
+                    ?>
 
-                        <div class="sidebar-post__date">
-                            <?php echo get_the_date('m.d.Y') ?>
-                        </div>
+                    <?php 
+                        if ($sidebar_ads) {
+                            $link = $sidebar_ad['link'];
+                            $image = $sidebar_ad['image'];    
+                        }
                         
-                        <a href="<?php the_permalink(); ?>">
-                        <img class="sidebar-post__image" src="<?php echo $thumb['0']; ?>" alt="">
-                        <h3 class="sidebar-post__heading"><?php the_title(); ?></h3>    
-                        </a>
-                    </div>
+                    ?>
 
-                <?php endwhile; ?> -->
+                    <?php if($sidebar_ads): ?>
+                    <a href="<?php echo $link; ?>">
+                        <img src="<?php echo $image['url']; ?>" alt="">
+                    </a>
+                    <?php endif; ?>
+                </div>
 
 
             </div>

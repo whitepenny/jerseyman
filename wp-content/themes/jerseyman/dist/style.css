@@ -848,7 +848,7 @@ body .gform_wrapper .validation_message {color: #C53935;}
     display: none;
 }
 @media (min-width: 992px) {
-.subscribe-ad {display:block;-webkit-box-flex:0;-ms-flex:0 0 300px;flex:0 0 300px}}
+.subscribe-ad {display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-flex:0;-ms-flex:0 0 300px;flex:0 0 300px;-webkit-box-align:center;-ms-flex-align:center;align-items:center;-webkit-box-pack:center;-ms-flex-pack:center;justify-content:center}}
 .member-link {
     color: #fff;
     display: -webkit-box;
@@ -890,5 +890,17 @@ body .gform_wrapper .validation_message {color: #C53935;}
     line-height: 2.0rem;
 }
 .photo-link i {margin-right: 1.0rem;line-height: 2.0rem;}
+.content-ad {
+    padding: 4.0rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+}
 
 

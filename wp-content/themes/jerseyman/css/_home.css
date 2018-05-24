@@ -243,8 +243,10 @@
 
     display: none;
     @media (min-width: $tabletSize) {
-        display: block;
+        display: flex;
         flex: 0 0 300px;    
+        align-items: center;
+        justify-content: center;
     }
 }
 
@@ -327,4 +329,11 @@
         margin-right: 1.0rem;
         line-height: 2.0rem;
     }
+}
+
+.content-ad {
+    padding: 4.0rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }

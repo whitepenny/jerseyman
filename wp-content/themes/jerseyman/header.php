@@ -44,7 +44,7 @@
             $ad = $ads[$key]; // Get the add array from the returned key
         } else {
             $ads = get_field('top_ad', 'options');
-            $ad = array_rand($ads, 1);
+            $key = array_rand($ads, 1);
             $ad = $ads[$key];
         }  ?>
         

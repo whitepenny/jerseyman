@@ -152,7 +152,30 @@
         </div>
         <div class="main__sidebar">
             
-            Sidebar
+            <div class="sidebar_ad">
+                <?php
+                    $sidebar_ads = get_field('sidebar_ad', 'options'); // Get all the ads
+
+                    if($sidebar_ads) {
+                        $sidebar_ad_key = array_rand($sidebar_ads, 1); // Get the key of the random ad
+                        $sidebar_ad = $sidebar_ads[$sidebar_ad_key]; // Get the add array from the returned key
+                    }
+                ?>
+
+                <?php 
+                    if ($sidebar_ads) {
+                        $link = $sidebar_ad['link'];
+                        $image = $sidebar_ad['image'];    
+                    }
+                    
+                ?>
+
+                <?php if($sidebar_ads): ?>
+                <a href="<?php echo $link; ?>">
+                    <img src="<?php echo $image['url']; ?>" alt="">
+                </a>
+                <?php endif; ?>
+            </div>
         </div>
     </div>
 
