@@ -615,7 +615,7 @@ body .gform_wrapper .validation_message {color: #C53935;}
 @media (min-width: 900px) {
 .featured-banner__content {position:absolute;width:50%;min-height:35%;right:0}}
 @media (min-width: 1300px) {
-.featured-banner__content {width:33%;max-width:45%;height:50%;right:0}}
+.featured-banner__content {max-width:45%;right:0}}
 .featured-banner__content:before {content: '';position: absolute;top: 5%;left: 0;height: 90%;background: #6DDA2A;}
 @media (min-width: 900px) {
 .featured-banner__content:before {width:10px}}

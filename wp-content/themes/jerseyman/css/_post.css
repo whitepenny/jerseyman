@@ -176,9 +176,7 @@
     }
 
     @media (min-width: 1300px) {
-        width: 33%;
         max-width: 45%;
-        height: 50%;    
         right: 0;
     }
 
