@@ -18,12 +18,23 @@
 }
 
 .single-post__content {
-    width: 75%;
-    padding-right: 6%;
+    width: 100%;
+
+    @media (min-width: $phoneSize) {
+        width: 75%;
+        padding-right: 6%;    
+    }
+    
 }
 
 .single-post__sidebar {
-    width: 25%;   
+    display: none;
+
+    @media (min-width: $phoneSize) {
+        display: block;
+        width: 25%;       
+    }
+    
 }
 
 .single-post__meta {
