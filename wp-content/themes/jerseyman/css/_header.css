@@ -24,6 +24,7 @@
 .mobile-nav-trigger {
     margin-left: 2.0rem;
     border: 1px solid $backgroundColor;
+    display: none;
 
     @media (min-width: $tabletSize) {
         display: none;

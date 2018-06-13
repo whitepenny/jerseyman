@@ -24,7 +24,7 @@ document.createElement( "picture" );
     $('.mobile-navigation').navigation({
       type: "overlay",
         gravity: "right",
-        maxWidth: "768px"
+        maxWidth: "1000px"
     });
 
     $('.search-toggle').swap();
