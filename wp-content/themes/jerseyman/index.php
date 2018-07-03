@@ -11,7 +11,7 @@
             'tax_query' => array(
                     array(
                         'taxonomy' => 'category',
-                        'field' => 'id',
+                        'field' => 'term_id',
                         'terms' => array( $catID, $featuredID ),
                         'operator' => 'AND'
                     )
