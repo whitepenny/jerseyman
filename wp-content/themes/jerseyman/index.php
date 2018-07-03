@@ -13,6 +13,7 @@
                         'taxonomy' => 'category',
                         'field' => 'slug',
                         'terms' => array( $catSlug->slug, 'featured' ),
+                        'operator' => 'AND',
                     )
                 )
         );
