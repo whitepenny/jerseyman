@@ -1,7 +1,9 @@
 <?php get_header(); ?>
 
-    <?php $catID = get_query_var('cat');  ?>
+    <?php $catID = get_query_var('cat'); $catSlug = get_category($catID);  ?>
     <?php $featuredID = get_cat_ID( 'featured' ); ?>
+
+    <?php echo $catSlug->slug; ?>
 
   <?php $args = array(
             'post_type' => 'post',
@@ -9,8 +11,8 @@
             'tax_query' => array(
                     array(
                         'taxonomy' => 'category',
-                        'field' => 'term_taxonomy_id',
-                        'terms' => array( $catID, $featuredID ),
+                        'field' => 'slug',
+                        'terms' => array( $catSlug->slug, 'featured' ),
                     )
                 )
         );
