@@ -1,21 +1,10 @@
 <?php get_header(); ?>
 
-    <?php $catID = get_query_var('cat');  ?>
-    <?php $featuredID = get_cat_ID( 'featured' ); ?>
-
-  <?php $args = array(
-            'post_type' => 'post',
-            'posts_per_page' => 1,
-            'tax_query' => array(
-                    array(
-                        'taxonomy' => 'category',
-                        'field' => 'id',
-                        'terms' => array( $catID, $featuredID ),
-                        'operator' => 'AND'
-                    )
-                )
-        );
-    $featured_query = new WP_Query( $args );  ?>
+    <?php
+     $catID = get_query_var('cat');
+     $featuredID = get_cat_ID( 'featured' );
+     $featured_query = new WP_Query( array('category__and' => array( $catID, $featuredID ), 'posts_per_page' => 1 ) );
+    ?>
 
     <?php if($featured_query->have_posts()): ?>
 
