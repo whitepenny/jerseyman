@@ -184,8 +184,10 @@ Template Name: Home
                 </div>
 
                 <div class="member-link" >
+
+                    <?php $membersLink = get_field('members_link', 'options'); ?>
                     <i class="icon card"></i> 
-                    <a href="">See Our Members</a>
+                    <a href="<?php echo $membersLink; ?>">See Our Members</a>
                 </div>
             </div>
 

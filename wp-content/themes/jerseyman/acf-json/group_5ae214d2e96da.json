@@ -129,6 +129,25 @@
             "mime_types": ""
         },
         {
+            "key": "field_5b44e609f7490",
+            "label": "Members Link",
+            "name": "members_link",
+            "type": "text",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
             "key": "field_5b05c4644bb7f",
             "label": "Ads",
             "name": "",
@@ -660,5 +679,5 @@
     "hide_on_screen": "",
     "active": 1,
     "description": "",
-    "modified": 1527171015
+    "modified": 1531242022
 }
