@@ -327,7 +327,7 @@ Template Name: Home
                 
 
                 <p>
-                <a class="photo-link" href="#"><i class="icon camera"></i> See the Photos</a>
+                <a class="photo-link" href="<?php the_field('event_photo_link', 'options') ?>"><i class="icon camera"></i> See the Photos</a>
                 </p>
 
                 <div class="button-group">
