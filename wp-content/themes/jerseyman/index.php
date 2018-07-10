@@ -6,7 +6,7 @@
      $featured_query = new WP_Query( array('category__and' => array( $catID, $featuredID ), 'posts_per_page' => 1 ) );
     ?>
 
-    <?php if($featured_query->have_posts()): ?>
+    <?php if($featured_query->have_posts() && !is_paged()): ?>
 
     <div class="featured-banner-container">
 
@@ -54,9 +54,11 @@
 
     <?php wp_reset_postdata(); ?>
 
+    <?php if(!is_paged()): ?>
     <div class="posts-heading">
         <span>Latest Stories</span>
     </div>
+    <?php endif; ?>
 
     <div class="container main__container">
         
