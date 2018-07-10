@@ -220,31 +220,32 @@ Template Name: Home
     </div>
 </div>
 
+<?php
+    $content_ads = get_field('home_content_ad', 'options'); // Get all the ads
 
+    if($content_ads) {
+        $content_ad_key = array_rand($content_ads, 1); // Get the key of the random ad
+        $content_ad = $content_ads[$content_ad_key]; // Get the add array from the returned key
+    }
+?>
+
+<?php 
+    if ($content_ads) {
+        $link = $content_ad['link'];
+        $image = $content_ad['image'];    
+    }
+    
+?>
+
+<?php if($content_ads): ?>
 <div class="content-ad">
-    <?php
-        $content_ads = get_field('home_content_ad', 'options'); // Get all the ads
-
-        if($content_ads) {
-            $content_ad_key = array_rand($content_ads, 1); // Get the key of the random ad
-            $content_ad = $content_ads[$content_ad_key]; // Get the add array from the returned key
-        }
-    ?>
-
-    <?php 
-        if ($content_ads) {
-            $link = $content_ad['link'];
-            $image = $content_ad['image'];    
-        }
-        
-    ?>
-
-    <?php if($content_ads): ?>
+    
     <a href="<?php echo $link; ?>">
         <img src="<?php echo $image['url']; ?>" alt="">
     </a>
-    <?php endif; ?>
+    
 </div>
+<?php endif; ?>
 
 
 
@@ -342,30 +343,34 @@ Template Name: Home
     
 </div>
 
+<?php
+    $footer_ads = get_field('home_footer_ad', 'options'); // Get all the ads
+
+    if($footer_ads) {
+        $footer_ad_key = array_rand($footer_ads, 1); // Get the key of the random ad
+        $footer_ad = $footer_ads[$footer_ad_key]; // Get the add array from the returned key
+    }
+?>
+
+<?php 
+    if ($footer_ads) {
+        $link = $footer_ad['link'];
+        $image = $footer_ad['image'];    
+    }
+    
+?>
+
+<?php if($footer_ads): ?>
+
 <div class="footer-ad content-ad">
-    <?php
-        $footer_ads = get_field('home_footer_ad', 'options'); // Get all the ads
-
-        if($footer_ads) {
-            $footer_ad_key = array_rand($footer_ads, 1); // Get the key of the random ad
-            $footer_ad = $footer_ads[$footer_ad_key]; // Get the add array from the returned key
-        }
-    ?>
-
-    <?php 
-        if ($footer_ads) {
-            $link = $footer_ad['link'];
-            $image = $footer_ad['image'];    
-        }
-        
-    ?>
-
-    <?php if($footer_ads): ?>
+    
     <a href="<?php echo $link; ?>">
         <img src="<?php echo $image['url']; ?>" alt="">
     </a>
-    <?php endif; ?>
+
 </div>
+
+<?php endif; ?>
 
 
 <?php get_footer(); ?>
