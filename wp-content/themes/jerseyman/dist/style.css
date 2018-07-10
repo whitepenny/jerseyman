@@ -787,19 +787,30 @@ body .gform_wrapper .validation_message {
         margin-right: 2.0rem;
     }
 .main__container {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
     padding-top: 6.0rem;
     padding-bottom: 6.0rem;
 }
+@media (min-width: 768px) {
+.main__container {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+}
+    }
+@media (min-width: 768px) {
 .main__content {
     width: 75%;
-    padding-right: 6%;
+    padding-right: 6%
 }
+    }
 .main__sidebar {
-    width: 25%;   
+    text-align: center;
 }
+@media (min-width: 768px) {
+.main__sidebar {
+    width: 25%
+}   
+    }
 .posts-heading {
     max-width: 140.0rem;
     margin: 0 auto;
@@ -840,18 +851,26 @@ body .gform_wrapper .validation_message {
 
     }
 .post-preview {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
     margin-bottom: 4.0rem;
 }
+@media (min-width: 768px) {
+.post-preview {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+}    
+    }
+@media (min-width: 768px) {
 .post-preview__image {
-    width: 45%;
-}
+        width: 45%
+}    
+    }
+@media (min-width: 768px) {
 .post-preview__content {
-    width: 55%;
-    padding: 0 0 3.0rem 3.0rem;
+        width: 55%;
+        padding: 0 0 3.0rem 3.0rem
 }
+    }
 .post-preview__content h2 {
         font-size: 3.0rem;
         line-height: 4.4rem;

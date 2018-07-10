@@ -1,16 +1,25 @@
 .main__container {
-    display: flex;
+    
+    @media (min-width: $phoneSize) {
+        display: flex;
+    }
     padding-top: 6.0rem;
     padding-bottom: 6.0rem;
 }
 
 .main__content {
+    @media (min-width: $phoneSize) {
     width: 75%;
     padding-right: 6%;
+    }
 }
 
 .main__sidebar {
+    text-align: center;
+    
+    @media (min-width: $phoneSize) {
     width: 25%;   
+    }
 }
 
 .posts-heading {
@@ -46,17 +55,23 @@
 }
 
 .post-preview {
-    display: flex;
+    @media (min-width: $phoneSize) {
+        display: flex;    
+    }
     margin-bottom: 4.0rem;
 }
 
 .post-preview__image {
-    width: 45%;
+    @media (min-width: $phoneSize) {
+        width: 45%;    
+    }
 }
 
 .post-preview__content {
-    width: 55%;
-    padding: 0 0 3.0rem 3.0rem;
+    @media (min-width: $phoneSize) {
+        width: 55%;
+        padding: 0 0 3.0rem 3.0rem;
+    }
 
     h2 {
         @mixin bravo;
