@@ -231,7 +231,10 @@
 }
 
 .share-buttons {
-    padding: 0 10px;
+    
+        padding: 0 30px;    
+    
+    
 }
 
 #jp-relatedposts .jp-relatedposts-items-visual h4.jp-relatedposts-post-title {
