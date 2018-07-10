@@ -40,8 +40,7 @@
             </div>
 
             <div class="footer-network">
-                <h2>USAMan</h2>
-                <p>Etiam porta sem malesuada magna mollis euismod. Duis mollis, est non commodo luctus</p>
+                <?php the_field('footer_content', 'options'); ?>
             </div>
 
         </div>

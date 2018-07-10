@@ -37,20 +37,24 @@
 
     <div class="page-wrapper nav_content">
     
+
+    <?php if(is_front_page()) {
+        $ads = get_field('home_top_ad', 'options'); // Get all the ads
+        if($ads) {
+            $key = array_rand($ads, 1); // Get the key of the random ad
+            $ad = $ads[$key]; // Get the add array from the returned key
+        }
+    } else {
+        $ads = get_field('top_ad', 'options');
+        if($ads) {
+            $key = array_rand($ads, 1);
+            $ad = $ads[$key];
+        }
+    }  ?>
+
+    <?php if($ads): ?>
     <div class="banner-ad">
-        <?php if(is_front_page()) {
-            $ads = get_field('home_top_ad', 'options'); // Get all the ads
-            if($ads) {
-                $key = array_rand($ads, 1); // Get the key of the random ad
-                $ad = $ads[$key]; // Get the add array from the returned key
-            }
-        } else {
-            $ads = get_field('top_ad', 'options');
-            if($ads) {
-                $key = array_rand($ads, 1);
-                $ad = $ads[$key];
-            }
-        }  ?>
+        
         
         <?php 
 
@@ -65,6 +69,7 @@
         
         
     </div>
+    <?php endif; ?>
     <div class="header">
         
         <div class="header-logo">
@@ -93,7 +98,7 @@
             <?php get_template_part( 'social-menu' ); ?>
         </div>
 
-        <a class="header-cta" href="#">
+        <a class="header-cta" href="<?php the_field('become_a_member', 'options'); ?>">
             <i class="icon starburst"></i>
 
             <div>

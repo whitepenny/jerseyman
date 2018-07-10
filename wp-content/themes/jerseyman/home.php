@@ -322,16 +322,16 @@ Template Name: Home
             
             <div class="featured-banner__content featured-banner__event">
                 
-                <h2>Events</h2>
-                <p>We held our annual end-of-summer blowout at the Trop in Atlantic City. Thanks to all who came out.</p>
+                <?php the_field('events_content', 'options'); ?>
                 
+
                 <p>
                 <a class="photo-link" href="#"><i class="icon camera"></i> See the Photos</a>
                 </p>
 
                 <div class="button-group">
-                    <div><a href="#" class="btn btn-primary">See Past Events</a></div>
-                    <div><a href="#" class="btn btn-primary">Become a Member</a></div>
+                    <div><a href="<?php the_field('events_past_events', 'options') ?>" class="btn btn-primary">See Past Events</a></div>
+                    <div><a href="<?php the_field('become_a_member', 'options') ?>" class="btn btn-primary">Become a Member</a></div>
                 </div>
             
 
