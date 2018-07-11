@@ -317,8 +317,8 @@ Template Name: Home
 
 
 
-            
-            <img src="<?php echo THEME_URI; ?>/dist/img/event.jpg" alt="">
+            <?php $eventsBackground = get_field('events_background', 'options'); ?>
+            <img src="<?php echo $eventsBackground['url'] ?>" alt="">
             
             
             <div class="featured-banner__content featured-banner__event">
