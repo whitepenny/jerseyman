@@ -311,6 +311,16 @@
         @media (min-width: $phoneSize) {
             display: flex;
         }
+
+        a {
+            color: #000;
+
+            &:hover {
+                color: #fff;
+                text-decoration: none;
+                
+            }
+        }
     }
 
     a {
