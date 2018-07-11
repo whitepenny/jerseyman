@@ -1494,6 +1494,12 @@ body .gform_wrapper .validation_message {
             display: flex
     }
         }
+.featured-banner__event a {
+        color: #6DDA2A;
+    }
+.featured-banner__event a:hover {
+            text-decoration: underline;
+        }
 .photo-link {
     display: inline-block;
     color: #fff;

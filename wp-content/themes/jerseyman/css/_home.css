@@ -312,6 +312,14 @@
             display: flex;
         }
     }
+
+    a {
+        color: $mainColor;
+
+        &:hover {
+            text-decoration: underline;
+        }
+    }
 }
 
 .photo-link {
