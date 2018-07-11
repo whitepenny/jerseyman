@@ -75,4 +75,12 @@
     @media (min-width: $tabletSize) {
         display: block;
     }
+
+    a {
+        color: $mainColor;
+
+        &:hover {
+            text-decoration: underline;
+        }
+    }
 }

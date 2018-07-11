@@ -206,6 +206,12 @@ a {
 a:hover {
     color: #6DDA2A;
   }
+.cms a {
+    color: #6DDA2A;
+  }
+.cms a:hover {
+      text-decoration: underline;
+    }
 .decorated {
     padding-bottom: 4px;
     border-bottom: 4px solid #C5000D;
@@ -775,6 +781,12 @@ body .gform_wrapper .validation_message {
         display: block
 }
     }
+.footer-network a {
+        color: #6DDA2A;
+    }
+.footer-network a:hover {
+            text-decoration: underline;
+        }
 .social-menu {
     display: -webkit-box;
     display: -ms-flexbox;

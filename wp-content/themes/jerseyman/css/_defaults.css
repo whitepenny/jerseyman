@@ -290,6 +290,16 @@ a {
 
 }
 
+.cms {
+  a {
+    color: $mainColor;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}
+
 @define-mixin decorated {
     padding-bottom: 4px;
     border-bottom: 4px solid $secondaryColor;
