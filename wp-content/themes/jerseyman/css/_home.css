@@ -204,8 +204,12 @@
 }
 
 .subscribe-content {
-    display: flex;
+    
     justify-content: space-between;
+
+    @media (min-width: $phoneSize) {
+        display: flex;
+    }
 }
 
 .subscribe-body {
@@ -241,12 +245,15 @@
 
 .subscribe-ad {
 
-    display: none;
-    @media (min-width: $tabletSize) {
+    display: block;
+    padding: 50px 0 0 0;
+    text-align: center;
+    @media (min-width: $phoneSize) {
         display: flex;
         flex: 0 0 300px;    
         align-items: center;
         justify-content: center;
+        padding: 0;
     }
 }
 

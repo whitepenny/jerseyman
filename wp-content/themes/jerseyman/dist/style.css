@@ -816,11 +816,14 @@ body .gform_wrapper .validation_message {
     }
 .main__sidebar {
     text-align: center;
+    padding: 30px 0;
 }
 @media (min-width: 768px) {
 .main__sidebar {
-    width: 25%
-}   
+    width: 25%;   
+    text-align: left;
+    padding: 0
+}
     }
 .posts-heading {
     max-width: 140.0rem;
@@ -1045,12 +1048,17 @@ body .gform_wrapper .validation_message {
         margin-bottom: 3.0rem;
     }
 .sr-single-post {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
+    
     padding-top: 6.0rem;
     padding-bottom: 6.0rem;
 }
+@media (min-width: 768px) {
+.sr-single-post {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex
+}
+    }
 .single-post__content {
     width: 100%;
     
@@ -1063,15 +1071,19 @@ body .gform_wrapper .validation_message {
 }    
     }
 .single-post__sidebar {
-    display: none;
+    width: 100%;
+    padding: 30px 0;
+    text-align: center;
     
 }
 @media (min-width: 768px) {
 .single-post__sidebar {
         display: block;
-        width: 25%
+        width: 25%; 
+        padding: 0;      
+        text-align: left
     
-}       
+}
     }
 .single-post__meta {
     display: -webkit-box;
@@ -1370,13 +1382,20 @@ body .gform_wrapper .validation_message {
     padding: 10.0rem 2.0rem;
 }
 .subscribe-content {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
+    
     -webkit-box-pack: justify;
+    
         -ms-flex-pack: justify;
+    
             justify-content: space-between;
 }
+@media (min-width: 768px) {
+.subscribe-content {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex
+}
+    }
 .subscribe-body {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1411,9 +1430,11 @@ body .gform_wrapper .validation_message {
     }
 .subscribe-ad {
 
-    display: none;
+    display: block;
+    padding: 50px 0 0 0;
+    text-align: center;
 }
-@media (min-width: 992px) {
+@media (min-width: 768px) {
 .subscribe-ad {
         display: -webkit-box;
         display: -ms-flexbox;
@@ -1426,7 +1447,8 @@ body .gform_wrapper .validation_message {
                 align-items: center;
         -webkit-box-pack: center;
             -ms-flex-pack: center;
-                justify-content: center
+                justify-content: center;
+        padding: 0
 }
     }
 .member-link {
